@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/c101d74312.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="cont">
+            <nav>
+                <img src="logoys1-removebg-preview.png" alt="no image" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="headertxt">
+                <p>Hello Guys, It's Me</p>
+                <h1><span>Yash </span>Sharma,</h1>
+                <h3>And, I am a <span class="text">Software Developer</span></h3>
+            </div>
+        </div>
+    </div>
+
+       <!-- about  -->
+    <div id="about">
+        <div class="cont">
+            <div class="row">
+                <div class="col1">
+                    <img src="ysimg.jpg">
+                </div>
+                <div class="col2">
+                    <h1 class="subtitle">Introducing Myself</h1>
+                    <p>Hey, I am <span class="myname">Yash Sharma</span>, a recent graduate from MRIIRS. I am Btech CSE student with an average CGPA of <span class="myname">8.5</span>. I am a determined, devoted, punctual and hard-working person. I take every task as a challenge and give my 100% to fulfill that task with perfect effectiveness and efficiency.</p>
+                    <div class="option-title">
+                        <p class="option active-title" onclick="opentab('Skills')">Skills</p>
+                        <p class="option" onclick="opentab('Projects')">Projects</p>
+                        <p class="option" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="option-cont active-opt" id="Skills">
+                        <ul>
+                            <li><span>CP/Contest</span><br>Competitive Contest Participation</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Flutter</span><br>Flutter Development</li>
+                        </ul>
+                    </div>
+                    <div class="option-cont" id="Projects">
+                        <ul>
+                            <li><span>Portfolio Website</span><br>Based on front-End</li>
+                            <li><span>Personality Prediction site</span><br>Based on front-End</li>
+                            <li><span>Background App</span><br>Created Using Flutter</li>
+                        </ul>
+                    </div>
+                    <div class="option-cont" id="Education">
+                        <ul>
+                            <li><span>2018</span><br>Class 10th Cleared || 91.6%</li>
+                            <li><span>2020</span><br>Class 12th Cleared || 96.2%</li>
+                            <li><span>2024</span><br>Software Developer || 8.52 CGPA</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services  -->
+
+    <div id="services">
+        <div class="cont">
+            <h1 class="subtitle">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-aws"></i>
+                    <h2>Web Development</h2>
+                    <p>It allows us to create a web application for any real world problem that can be represented using Web</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Competitive Coding</h2>
+                    <p>This is a type of coding contest where coder's are allowed to tackle real world problems and to design a code for it.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Flutter Development</h2>
+                    <p>It allows us to create an application for any general purpose like payment application or any other purpose.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio  -->
+    <div id="portfolio">
+        <div class="cont">
+            <h1 class="subtitle">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work1.jpg" >
+                    <div class="desc">
+                        <h3>Portfolio Website</h3>
+                        <div>This is a website that has been designed to enlist my achievemnets and all my projects</div>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work2.jpg" >
+                    <div class="desc">
+                        <h3>Personality Quiz</h3>
+                        <div>This is a website that has been designed to predict personality of an individual based on its traits
+                        </div>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work3.jpg"  >
+                    <div class="desc">
+                        <h3>Background App</h3>
+                        <div>This app allows us to find ourselves different background for our mobile screen</div>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+        <div class="cont">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> yash100sharma1706@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 8028027334</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/profile.php?id=100021719374866&mibextid=ZbWKwL" target="_blank" >
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/yasshhhh_03/" target="_blank">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+                        <a href="https://www.twitter.com/" target="_blank">
+                            <i class="fa-brands fa-square-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/yash-sharma-57a846232" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <a href="Yashsharma_resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="info"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights">
+            <p>copyright &copy; Yash. All rights Reserved.</p>
+        </div>
+    </div>
+
+    <!-- <script src="main.js"></script> -->
+    <script>
+        // var typed= new typed(".text",{
+        //     Strings: ["Software Developer" , "Programmer" , "Web developer"],
+        //     typeSpeed:100,
+        //     backSpeed:100,
+        //     backDelay:1000,
+        //     loop:true,
+        // });
+
+    </script>
+
+    <script>
+
+
+        var optiontitle=document.getElementsByClassName('option');
+        var optioncont=document.getElementsByClassName('option-cont');
+
+        function opentab(optioname){
+            for(opttitle of optiontitle){
+                opttitle.classList.remove("active-title");
+            }
+            for(opt of optioncont){
+                opt.classList.remove("active-opt");
+            }
+            event.currentTarget.classList.add("active-title");
+            document.getElementById(optioname).classList.add("active-opt");
+        }
+    </script>
+
+    <script>
+        var sideme=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sideme.style.right="0";
+        }
+
+        function closemenu(){
+            sideme.style.right="-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxk9cJZ5MauVJExj1vprqQLvzSUePAvRQOKHGMJv7Xy7MmaARoBMdvm4GhqhF741_WS9Q/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const info = document.getElementById("info")
+    
+        form.addEventListener('submit', e => {  
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                info.innerHTML = "Thanks For Feedback !"
+                setTimeout(function(){
+                    info.innerHTML= ""
+                }, 2000);
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+</body>
+</html>
